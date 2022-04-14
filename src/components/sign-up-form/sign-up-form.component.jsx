@@ -50,27 +50,27 @@ export const SignUpForm = () => {
                     onChange={e => handleChange(e)}/>
 
                 <FormInput
-                       label='Email'
-                       required type="email"
-                       name='email'
-                       value={email}
-                       onChange={e => handleChange(e)}/>
+                    label='Email'
+                    required type="email"
+                    name='email'
+                    value={email}
+                    onChange={e => handleChange(e)}/>
 
                 <FormInput
-                       label='Password'
-                       required type="password"
-                       name='password'
-                       value={password}
-                       onChange={e => handleChange(e)}/>
+                    label='Password'
+                    required type="password"
+                    name='password'
+                    value={password}
+                    onChange={e => handleChange(e)}/>
 
                 <FormInput
-                       label='Confirm Password'
-                       required type="password"
-                       name='confirmPassword'
-                       value={confirmPassword}
-                       onChange={e => handleChange(e)}/>
+                    label='Confirm Password'
+                    required type="password"
+                    name='confirmPassword'
+                    value={confirmPassword}
+                    onChange={e => handleChange(e)}/>
 
-                <Button type = 'submit'>Sign Up</Button>
+                <Button type='submit'>Sign Up</Button>
             </form>
         </div>
     )
