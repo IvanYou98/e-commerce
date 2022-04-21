@@ -2,12 +2,10 @@ import Home from "./router/home/home.component";
 import {Routes, Route} from "react-router-dom";
 import Navigation from "./router/navigation/navigation.component";
 import {Authentication} from "./router/authentication/authentication";
-import {Fragment} from "react";
+import {Shop} from "./router/shop/shop.component";
 
 
-const Shop = () => <Fragment>
-    This is the shop page.
-</Fragment>
+
 
 
 const App = () => (
