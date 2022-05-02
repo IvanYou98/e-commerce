@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import {useContext} from "react";
 import {CategoriesContext} from "../../contexts/products.context";
 import {ProductCard} from "../product-card/product-card.component";
+import './category.styles.scss'
 
 export const Category = () => {
     const {category} = useParams();
@@ -14,7 +15,7 @@ export const Category = () => {
     }, [categoriesMap, category])
 
     return (
-        <div className='category-container'>
+        <div className='category-xx-container'>
             {products && products.map(product => <ProductCard key={product.id} product={product}/>)}
         </div>
     )
