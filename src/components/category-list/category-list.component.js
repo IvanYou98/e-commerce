@@ -1,10 +1,10 @@
 import CategoryItem from "../category-item/category-item.component";
-import './category-list.styles.scss'
+import {CategoryContainer} from './category-list.styles'
 
 const CategoryList = ({categories}) => (
-    <div className='categories-container'>
+    <CategoryContainer>
         {categories.map(category => <CategoryItem key={category.id} category={category}/>)}
-    </div>
+    </CategoryContainer>
 )
 
 export default CategoryList;
