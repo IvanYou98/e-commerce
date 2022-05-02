@@ -3,7 +3,7 @@ import {Fragment, useEffect, useState} from "react";
 import {useContext} from "react";
 import {CategoriesContext} from "../../contexts/products.context";
 import {ProductCard} from "../product-card/product-card.component";
-import './category.styles.scss'
+import  {CategoryContainer, Title} from './category.styles'
 
 export const Category = () => {
     const {category} = useParams();
@@ -16,10 +16,10 @@ export const Category = () => {
 
     return (
         <Fragment>
-            <h2 className='title'>{category.toUpperCase()}</h2>
-            <div className='category-xx-container'>
-                {products && products.map(product => <ProductCard key={product.id} product={product}/>)}
-            </div>
+            <Title>{category.toUpperCase()}</Title>
+            <CategoryContainer>
+                {products && products.map(product => <ProductCard key={product.id} product={product}/>)}}
+            </CategoryContainer>
         </Fragment>
     )
 
