@@ -5,10 +5,6 @@ import {Authentication} from "./router/authentication/authentication";
 import {Shop} from "./router/shop/shop.component";
 import {Checkout} from "./router/checkout/checkout.component";
 
-
-
-
-
 const App = () => (
     <Routes>
         <Route path='/' element={<Navigation/>}>
