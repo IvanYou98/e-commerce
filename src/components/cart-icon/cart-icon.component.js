@@ -4,10 +4,10 @@ import {useContext} from "react";
 
 export const CartIcon = () => {
     const clickHandler = () => {
-        setToggle(!toggle);
+        setIsCartOpen(!isCartOpen);
     }
 
-    const {toggle, setToggle, totalCnt} = useContext(CartContext);
+    const {setIsCartOpen, isCartOpen, totalCnt} = useContext(CartContext);
 
     return (
         <CartIconContainer onClick={clickHandler}>

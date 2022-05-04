@@ -9,7 +9,7 @@ import {CartContext} from "../../contexts/cart.context";
 import {NavigationContainer, LogoContainer, NavLinks, NavLink} from "./navigation.styles";
 
 const Navigation = () => {
-    const {toggle} = useContext(CartContext);
+    const {isCartOpen} = useContext(CartContext);
     const {currentUser} = useContext(UserContext);
 
 
@@ -30,7 +30,7 @@ const Navigation = () => {
                     }
                     <CartIcon/>
                 </NavLinks>
-                {toggle && <CartDropdown/>}
+                {isCartOpen && <CartDropdown/>}
             </NavigationContainer>
             <Outlet/>
         </Fragment>
