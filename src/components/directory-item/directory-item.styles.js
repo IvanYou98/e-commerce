@@ -71,7 +71,7 @@ export const DirectoryItemContainer = styled.div`
 `
 
 /*
-.category-container {
+.categories-container {
   min-width: 30%;
   height: 240px;
   flex: 1 1 auto;
@@ -90,7 +90,7 @@ export const DirectoryItemContainer = styled.div`
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
 
-    & .category-body-container {
+    & .categories-body-container {
       opacity: 0.9;
     }
   }
@@ -114,7 +114,7 @@ export const DirectoryItemContainer = styled.div`
     background-position: center;
   }
 
-  .category-body-container {
+  .categories-body-container {
 
 
   }
