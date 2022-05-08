@@ -3,26 +3,21 @@ import {CategoriesPreview} from "../../components/categories-preview/categories-
 import {Routes, Route} from "react-router-dom";
 import {Category} from "../../components/category/category.component";
 import {useDispatch, useSelector} from "react-redux";
-import {getCollectionsAndDocuments} from "../../utils/firebase/firebase.utils";
+import {getCategoriesAndDocuments} from "../../utils/firebase/firebase.utils";
 import {useEffect} from "react";
-import {setCategoriesMap} from "../../store/categories/categories.action";
-import {selectCategoriesMap} from "../../store/categories/categories.selector";
+import {setCategories} from "../../store/categories/categories.action";
 
 export const Shop = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        const fetchCategoriesMap = async () => {
-            const categoriesMap = await getCollectionsAndDocuments();
-            if (categoriesMap) {
-                dispatch(setCategoriesMap(categoriesMap));
-            }
+        const getCategories = async () => {
+            const categories = await getCategoriesAndDocuments();
+            console.log(categories);
+            dispatch(setCategories(categories));
         };
-        fetchCategoriesMap();
+        getCategories();
     }, [dispatch]);
-
-    const temp = useSelector(selectCategoriesMap);
-    console.log(temp);
 
     return (
         <Routes>

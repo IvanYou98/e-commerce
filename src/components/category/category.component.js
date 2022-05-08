@@ -24,5 +24,4 @@ export const Category = () => {
             </CategoryContainer>
         </Fragment>
     )
-
 }
