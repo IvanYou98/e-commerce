@@ -1,5 +1,5 @@
-import '../../router/shop/shop.styles.scss'
-import {CategoryPreview} from "../category-preview/category-preview.component";
+import '../shop/shop.styles.scss'
+import {CategoryPreview} from "../../components/category-preview/category-preview.component";
 import {useSelector} from "react-redux";
 import {selectCategoriesMap} from "../../store/categories/categories.selector";
 

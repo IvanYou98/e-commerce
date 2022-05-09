@@ -1,7 +1,7 @@
 import './shop.styles.scss'
-import {CategoriesPreview} from "../../components/categories-preview/categories-preview.component";
+import {CategoriesPreview} from "../categories-preview/categories-preview.component";
 import {Routes, Route} from "react-router-dom";
-import {Category} from "../../components/category/category.component";
+import {Category} from "../category/category.component";
 import {useDispatch, useSelector} from "react-redux";
 import {getCategoriesAndDocuments} from "../../utils/firebase/firebase.utils";
 import {useEffect} from "react";
